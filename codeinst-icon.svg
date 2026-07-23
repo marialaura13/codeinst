@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Ícone Codeinst</title>
+  <desc id="desc">Três barras ascendentes em verde ciano.</desc>
+  <g fill="#67F7D2" transform="translate(94 58) skewY(-12)">
+    <rect width="92" height="360" rx="12"/>
+    <rect x="116" y="108" width="92" height="252" rx="12"/>
+    <rect x="232" y="216" width="92" height="144" rx="12"/>
+  </g>
+</svg>
