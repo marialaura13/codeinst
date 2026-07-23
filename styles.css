@@ -46,9 +46,29 @@
 .quote-form label{font-size:13px}
 .quote-form input,.quote-form select,.quote-form textarea{font-size:16px}
 .form-bottom>span,.footer-main b,.footer-bottom{font-size:13px}
+.float-pill{font-size:14px;padding:11px 15px;font-weight:600}
+.float-card{padding:16px 20px}
+.float-card span{font-size:12px}
+.float-card code{font-size:14px}
+.card-speed span{font-size:12px}
+.service-card li:before,
+.service-card>a span{
+  font-family:Arial,Helvetica,sans-serif;
+  font-variant-emoji:text;
+  font-style:normal;
+  color:var(--cyan);
+}
+.service-card li:before{content:"\2197\FE0E"}
+.service-card>a span{font-size:0}
+.service-card>a span:before{content:"\2197\FE0E";font:700 16px Arial,Helvetica,sans-serif}
+.whatsapp-float svg{width:23px;height:23px;display:block;fill:currentColor;flex:0 0 auto}
+html,body{max-width:100%;overflow-x:hidden}
 @media(max-width:760px){
   .nav a{font-size:27px}
   .hero-text{font-size:17px}
   .section-head p,.trans-copy>p,.process-intro>p,.faq-intro>p,.quote-head>p{font-size:17px}
   .accordion summary{font-size:16px}
+  main,section,header,footer,.marquee{max-width:100vw}
+  .hero-visual,.browser,.service-grid,.project-grid,.compare,.quote-form{max-width:100%}
+  .float-card,.float-pill{max-width:calc(100vw - 40px)}
 }
