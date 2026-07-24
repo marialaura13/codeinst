@@ -63,6 +63,14 @@
 .service-card>a span:before{content:"\2197\FE0E";font:700 16px Arial,Helvetica,sans-serif}
 .whatsapp-float svg{width:23px;height:23px;display:block;fill:currentColor;flex:0 0 auto}
 html,body{max-width:100%;overflow-x:hidden}
+.btn span,.btn b,.text-link span,.project-link,.project-open,.service-icon,.pill-two,.loss span,.gain span,.compare-switch button{
+  font-family:Arial,Helvetica,sans-serif;
+  font-variant-emoji:text;
+}
+@media(min-width:1051px){
+  .service-grid{grid-template-columns:repeat(3,1fr)}
+  .service-card,.service-card.featured,.service-card:nth-child(3){grid-column:auto;grid-row:auto;min-height:500px}
+}
 @media(max-width:760px){
   .nav a{font-size:27px}
   .hero-text{font-size:17px}
@@ -71,4 +79,23 @@ html,body{max-width:100%;overflow-x:hidden}
   main,section,header,footer,.marquee{max-width:100vw}
   .hero-visual,.browser,.service-grid,.project-grid,.compare,.quote-form{max-width:100%}
   .float-card,.float-pill{max-width:calc(100vw - 40px)}
+  .diff-grid{
+    display:flex;
+    width:calc(100vw - 20px);
+    margin-right:-20px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scroll-padding-left:0;
+    gap:14px;
+    border:0;
+    padding:2px 20px 18px 0;
+    scrollbar-width:none;
+  }
+  .diff-grid::-webkit-scrollbar{display:none}
+  .diff-grid article{
+    flex:0 0 82%;
+    min-height:270px;
+    border:1px solid var(--line);
+    scroll-snap-align:start;
+  }
 }
